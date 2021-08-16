@@ -1,0 +1,309 @@
+/* from 1023-1200 */
+@media only screen and (max-width: 1200px) {
+  .header__text-box {
+    width: 1000px;
+  }
+  .heading__primary {
+    margin-bottom: 2rem;
+    color: rgba(22, 55, 117, 0.87);
+    backface-visibility: hidden;
+  }
+
+  .heading__primary-main {
+    margin-left: 4rem;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    animation: moveInLeft 1s ease-out;
+  }
+
+  .heading__primary-sub {
+    margin-left: 4rem;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    animation: moveInRight 1s ease-out;
+  }
+  .btn {
+    margin-left: 4rem;
+  }
+  /* Section feature */
+  .section-featur {
+    height: 90vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(206, 238, 248, 0.753),
+        rgba(37, 37, 37, 0.747)
+      ),
+      url(../images/feature.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .feature-box {
+    width: 90%;
+    margin: 0.8rem;
+    background-color: rgba(210, 231, 230, 0.863);
+    font-size: 0.8rem;
+    padding: 1.2rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s;
+  }
+
+  /* Section Cities */
+  .section-cities {
+    background-color: rgba(238, 244, 247, 0.795);
+    padding: 2rem 0 1.3rem 0;
+    height: 100vh;
+  }
+  .card {
+    position: relative;
+    width: 55vh;
+    padding: 1.3rem;
+  }
+  .btn-white {
+    text-align: center;
+    margin: 2px;
+    padding: 3px;
+    display: inline-block;
+    text-decoration: none;
+    color: #777;
+    border-radius: 3px;
+  }
+  .section-form {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(247, 253, 252, 0.911),
+      rgba(192, 206, 199, 0.562)
+    );
+    height: 70vh;
+  }
+}
+
+/* from 768 - 1023 */
+@media only screen and (max-width: 1023px) {
+  .header__text-box {
+    width: 750px;
+  }
+  .section-featur {
+    height: 40%;
+    width: auto;
+  }
+  .col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+  }
+  .col-1-of-4 {
+    width: 45.8%;
+  }
+
+  .section-cities {
+    background-color: rgba(238, 244, 247, 0.795);
+  }
+  .card {
+    perspective: 150rem;
+    position: relative;
+  }
+  .col-1-of-3 {
+    width: 28%;
+  }
+  .card__side {
+    margin: 2rem;
+    height: 18rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    width: 58%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+
+  card__heading {
+    font-size: 0.1rem;
+
+    text-transform: uppercase;
+    position: absolute;
+    float: left;
+    top: 50;
+    left: 50%;
+    width: 80%;
+    color: rgb(0, 0, 0);
+  }
+  .card__heading span {
+    padding: 0.3rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  .card__heading-span-1 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(176, 230, 214, 0.911),
+      rgba(108, 153, 131, 0)
+    );
+    border: none;
+  }
+
+  .card__heading-span-2 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(240, 227, 227, 0.911),
+      rgba(180, 138, 138, 0)
+    );
+    border: none;
+  }
+
+  .card__heading-span-3 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(193, 229, 240, 0.911),
+      rgba(141, 181, 184, 0)
+    );
+    border: none;
+  }
+
+  .card__deatils ul li {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .cust-reaction {
+    margin: 0;
+    padding: 0.2rem;
+  }
+}
+
+/* lessthan or equal to 767 (481-767)*/
+@media only screen and (max-width: 767px) {
+  .header__logo-box {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.3rem;
+  }
+  .header__logo {
+    height: 2.5rem;
+    width: auto;
+    border-radius: 3rem;
+  }
+
+  .header__nav {
+    float: left;
+    list-style: none;
+  }
+  .header__nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+  }
+
+  .header__nav li a:link,
+  .header__nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 65%;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s;
+  }
+
+  .header__nav li a:hover,
+  .header__nav li a:active {
+    cursor: pointer;
+    color: rgb(158, 223, 245);
+    border-bottom: 1px solid rgba(37, 37, 37, 0.747);
+  }
+
+  .header__text-box {
+    position: absolute;
+    width: 500px;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .heading__secondary {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      rgba(206, 238, 248, 0.753),
+      rgba(37, 37, 37, 0.747)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+  }
+  composition {
+    position: relative;
+  }
+  .composition__photo {
+    width: 59%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    transition: all 0.2s;
+    outline-offset: 1rem;
+  }
+  .composition__photo--p1 {
+    left: 0;
+    top: 0;
+  }
+
+  .composition__photo--p2 {
+    right: 0;
+    top: 5rem;
+  }
+  .composition__photo--p3 {
+    left: 1%;
+    top: 10rem;
+  }
+
+  .card {
+    perspective: 150rem;
+    position: relative;
+  }
+
+  .card__side {
+    height: 13rem;
+    transition: all 0.8s ease;
+    width: 45%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+
+  .section-testimonials {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(174, 224, 240, 0.753),
+        rgba(22, 22, 22, 0.87)
+      ),
+      url(../images/feature.jpg);
+    background-size: cover;
+    height: 135vh;
+    color: #fff;
+  }
+  .card__deatils ul li {
+    width: 45%;
+    text-align: center;
+    font-size: 0rem;
+    height: 1rem;
+  }
+  .section-form {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(247, 253, 252, 0.911),
+      rgba(192, 206, 199, 0.562)
+    );
+    height: 98vh;
+  }
+  .contact-form {
+    width: 70%;
+  }
+}
